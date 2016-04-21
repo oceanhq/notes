@@ -20,11 +20,12 @@ GithubIdentifier object
 * accountId
 * githubId
 
-### Accounts API
+## Accounts API
 
-Create Account
+### Create Account
 
 **POST /account**
+
 ```
 X-Request-ID: dad9de9d-0fbc-400a-9f1f-2d9d1d9af686
 {
@@ -33,6 +34,7 @@ X-Request-ID: dad9de9d-0fbc-400a-9f1f-2d9d1d9af686
 ```
 
 Response:
+
 ```
 201 CREATED
 X-Request-ID: dad9de9d-0fbc-400a-9f1f-2d9d1d9af686
@@ -43,7 +45,9 @@ X-Request-ID: dad9de9d-0fbc-400a-9f1f-2d9d1d9af686
 ```
 
 **GET /accounts/{:id}**
+
 Response:
+
 ```
 200 OK
 {
@@ -53,7 +57,9 @@ Response:
 ```
 
 **GET /accounts?username={:username}**
+
 Response:
+
 ```
 200 OK
 {
@@ -63,13 +69,16 @@ Response:
 ```
 
 **POST /github-identifiers**
+
 ```
 {
   "accountId": "fa496c42-6100-4838-9774-6683b3688cd2",
   "githubId": 11368271
 }
 ```
+
 Response:
+
 ```
 201 CREATED
 {
@@ -80,7 +89,9 @@ Response:
 ```
 
 **GET /github-identifiers?githubId={:githubId}**
+
 Response:
+
 ```
 200 OK
 {
