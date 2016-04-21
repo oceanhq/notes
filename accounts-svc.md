@@ -6,19 +6,35 @@ Users will sign in with Github to enable:
 * Frictionless verification of emails (Github reports if verified)
 * Importing SSH public keys (maybe future)
 
+### Entity Types
+
 Account object
-* id
-* username
+
+```
+{
+  "id": uuid,
+  "username": string
+}
+```
 
 AccountEmail object
-* id
-* accountId
-* email
+
+```
+{
+  "id": uuid,
+  "accountId": uuid,
+  "email": string
+}
+```
 
 GithubIdentifier object
-* id
-* accountId
-* githubId
+
+```
+{
+  "id": uuid,
+  "accountId": uuid,
+  "githubId": int
+```
 
 ## Accounts API
 
